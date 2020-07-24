@@ -1,0 +1,155 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+}
+main{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(5,1fr);
+}
+/* article un componente de la grilla general */
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #d4fc79, #96e6a1);
+    perspective: 1000px;
+}
+/* titulo del libro - en la perte superior de la pag*/
+.tit-libro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 1100px;
+    height: 35vh;
+    border-radius: 10px;
+}
+
+/* tamaño del libro en la grilla - al final borrar el border*/
+.tam-libro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* ESTILOS DE LA PORTADA DEL LIBRO */
+.cuadrado-port{
+    width: 50%;
+    height: 700px;
+    /* background-image: linear-gradient(#1dc434f6 ,#aeca5f); */
+    background-color: rgb(252, 219, 176);
+    border: 1px solid rgb(148, 33, 5);
+    border-radius: 20px ;
+}
+
+/* ESTILOS DE inclinacion DEL LIBRO */
+.cuadrado-cont{
+    position: absolute;
+    width: 1100px;
+    height: 700px;
+    background-color: rgba(222, 184, 135);
+    border: 3px solid rgba(138, 78, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 10px 30px rgba(0, 0, 0, 0.295);
+}
+.cuadrado-cont1{
+    transform: rotateX(60deg) translateZ(0px);
+
+}
+.cuadrado-cont2{
+    transform: rotateX(60deg) translateZ(-20px);
+}
+.cuadrado-cont3{
+    transform: rotateX(60deg) translateZ(-40px);
+    border: 15px solid rgb(148, 33, 5);
+}
+.inclinacion{
+    transition: all 5s;
+}
+
+/* estilo del cuadrado q cambia de pagina */
+.cuadrado{
+    width: 50%;
+    height: 700px;
+    background-image: linear-gradient(#1dc434f6 ,#aeca5f);
+    border: 1px solid blue;
+    transform: rotatex(60deg);
+    border-radius: 20px;
+}
+
+/* estilo cambiar pagina */
+/* despues lo arreglo mejor, tengo q preguntar */
+@keyframes cuadrado1{
+    0%{
+        transform: rotatex(60deg);
+    }
+    40%{
+        transform: rotatex(60deg) rotateY(-180deg);
+        transform-origin: left;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.cuadrado1{
+    animation-name: cuadrado1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease;
+}
+
+
+/* estilo boton pag siguiente y anterior*/
+.nav{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.nav>a{
+    width: 10em;
+    height: 2em;
+    margin: 0 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* estilo boton de deciciones */
+.opcion-respt{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.opcion-respt>a{
+    width: 10em;
+    height: 3em;
+    margin: 0 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+/* estilo de imagenes */
+.imagenes{
+    position: absolute;
+    width: 1200px;
+    height: 80vh;
+    border: 2px solid yellow;
+}
+img{}
+

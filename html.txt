@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caperucita Roja</title>
+    <link rel="stylesheet" href="caperucita-roja.css">
+</head>
+<body>
+    <main><!-- aqui la grilla -->
+        <article id="portada">
+            <div class="tit-libro">
+                <p>escriba aqui</p>
+            </div>
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div><!--hojas del libro-->
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado2 cuadrado">
+                    <h1>caperucita roja</h1>
+                </div>
+                <div class="cuadrado1 cuadrado">
+                    <h2>la mama le manda torta y vino a la abuela</h2>
+                </div>
+            </div>
+            <div>
+                <a href="#pag-1"> pag 1</a>
+            </div> <!--boton para responder o cambiar de pag-->
+        </article>
+
+        <article id="pag-1">
+            <div class="tit-libro">
+                <p>escriba aqui</p>
+            </div>
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div><!--hojas del libro-->
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado2 cuadrado">
+                    <h1>caperucita roja</h1>
+                </div>
+                <div class="cuadrado1 cuadrado">
+                    <h2>la mama le manda torta y vino a la abuela</h2>
+                </div>
+            </div>
+            <div></div> <!--boton para ir al div-->
+        </article>
+        <article id="pag-2">
+            <div class="tam-libro"></div>
+            <div></div> <!--boton para ir al div-->
+        </article>
+        <article id="pag-3">
+            <div class="tam-libro"></div>
+            <div></div> <!--boton para ir al div-->
+        </article>
+
+
+    </main>
+</body>
+</html>
